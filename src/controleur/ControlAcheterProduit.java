@@ -39,10 +39,11 @@ public class ControlAcheterProduit {
 	}
 	
 	public int acheterProduit(String nomVendeur, int quantite) {
-//		Gaulois vendeur =village.trouverHabitant(nomVendeur);
-//		Etal etal =village.rechercherEtal(vendeur);
-//		etal.acheterProduit(quantite);
-		return controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur).acheterProduit(quantite);
+		Gaulois vendeur =village.trouverHabitant(nomVendeur);
+		Etal etal =village.rechercherEtal(vendeur);
+		
+		return etal.acheterProduit(quantite);
+		//return controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur).acheterProduit(quantite);
 		
 	}
 	

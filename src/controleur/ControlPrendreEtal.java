@@ -22,7 +22,7 @@ public class ControlPrendreEtal {
 	public int prendreEtal(String nomVendeur, String produit, int nbProduit) {
 		//TODO a co pas compris pq we should write gaulois instead of string 
 		Gaulois vendeur = village.trouverHabitant(nomVendeur);
-		int numeroEtal = village.installerVendeur(vendeur, produit, nbProduit);
+		int numeroEtal = village.installerVendeur(vendeur, produit, nbProduit) +1;
 		return numeroEtal;
 	}
 

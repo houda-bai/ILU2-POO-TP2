@@ -10,7 +10,7 @@ public class ControlVerifierIdentite {
 	}
 
 	public boolean verifierIdentite(String nomVendeur) {
-		return village.trouverHabitant(nomVendeur)!=null;
-		//why is it nomVendeur et nn pas nomGaulois
+		return village.trouverHabitant(nomVendeur) != null;
+		// why is it nomVendeur et nn pas nomGaulois
 	}
 }
